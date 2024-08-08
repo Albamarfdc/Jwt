@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import { isLogin } from '../../middlewares/isLogin.js';
+// import { isLogin } from '../../middlewares/isLogin.js';
 
 import {
   allSongsPaginator,
@@ -15,7 +15,7 @@ import {
 } from '../../src/api/v1/controllers/songs.controller.js';
 const router = Router();
 
-router.get('/songs', isLogin, getAllSong)
+router.get('/songs', /* isLogin, */ getAllSong)
 
 router.post('/song', createSong);
 router.get('/songs/:id', getSongById);
