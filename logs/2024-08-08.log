@@ -1,0 +1,11 @@
+
+Started GET / for :: ::1 at Thu Aug 08 2024 15:59:23 GMT-0400 (hora de Venezuela)
+  Parameters in body: {}
+Completed: 404 message:  Time response: 19 ms Request ID: [464b2db0-5122-4578-b94b-92b1a7df5c93]
+
+Started GET /api/v1/songs for :: ::1 at Thu Aug 08 2024 15:59:33 GMT-0400 (hora de Venezuela)
+  Parameters in body: {}
+Started GET /api/v1/songs for :: ::1 at Thu Aug 08 2024 16:00:25 GMT-0400 (hora de Venezuela)
+  Parameters in body: {}
+Started GET /api/v1/songs for :: ::1 at Thu Aug 08 2024 16:01:12 GMT-0400 (hora de Venezuela)
+  Parameters in body: {}

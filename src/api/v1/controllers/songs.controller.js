@@ -45,10 +45,7 @@ export const getAllSong = async (req, res) => {
     const songs = await getALlSongModel();
     res.status(200).json({ songs: songs });
   } catch (error) {
-    const errorFound = findError(error.code);
-    return res
-      .status(errorFound[0].status)
-      .json({ error: errorFound[0].message });
+    res.status(500).json({ error: error.message });
   }
 };
 

@@ -1,14 +1,16 @@
 import 'dotenv/config';
 import pg from 'pg';
 
-const { DB_HOST, DB_USER, DB_PASSWORD, DB_DATABASE } = process.env;
+const { DB_HOST, DB_USER, DB_PASSWORD, DB_DATABASE,DATABASE_URL } = process.env;
 
 const pool = new pg.Pool({
-  user: DB_USER,
-  host: DB_HOST,
-  database: DB_DATABASE,
-  password: DB_PASSWORD,
-  allowExitOnIdle: true,
+  // user: DB_USER,
+  // host: DB_HOST,
+  // database: DB_DATABASE,
+  // password: DB_PASSWORD,
+  // allowExitOnIdle: true,
+  connectionString: DATABASE_URL,
+  ssl: true
 });
 
 pool.query('SELECT NOW()', (err, res) => {
