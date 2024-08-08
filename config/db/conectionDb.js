@@ -1,7 +1,13 @@
 import 'dotenv/config';
 import pg from 'pg';
 
-const { DB_HOST, DB_USER, DB_PASSWORD, DB_DATABASE,DATABASE_URL } = process.env;
+const { Pool } = pg;
+
+const pool = new Pool({
+  connectionString: process.env.POSTGRES_URL,
+});
+
+/* const { DB_HOST, DB_USER, DB_PASSWORD, DB_DATABASE,POSTGRES_URL, } = process.env;
 
 const pool = new pg.Pool({
   // user: DB_USER,
@@ -9,9 +15,9 @@ const pool = new pg.Pool({
   // database: DB_DATABASE,
   // password: DB_PASSWORD,
   // allowExitOnIdle: true,
-  connectionString: DATABASE_URL,
-/*   ssl: true */
-});
+  connectionString: POSTGRES_URL,
+
+}); */
 
 pool.query('SELECT NOW()', (err, res) => {
   res ? console.log('🔋 DB-Connected', res.rows[0].now) : console.log({ err });
