@@ -9,3 +9,14 @@ Started GET /api/v1/songs for :: ::1 at Thu Aug 08 2024 16:00:25 GMT-0400 (hora 
   Parameters in body: {}
 Started GET /api/v1/songs for :: ::1 at Thu Aug 08 2024 16:01:12 GMT-0400 (hora de Venezuela)
   Parameters in body: {}
+Started GET / for :: ::1 at Thu Aug 08 2024 16:02:24 GMT-0400 (hora de Venezuela)
+  Parameters in body: {}
+Completed: 404 message:  Time response: 30 ms Request ID: [bc723488-34cb-49c3-83c5-fe71d078975a]
+
+Started GET /api/v1/songs for :: ::1 at Thu Aug 08 2024 16:02:26 GMT-0400 (hora de Venezuela)
+  Parameters in body: {}
+Completed: 500 message:  Time response: 6079 ms Request ID: [eeeea7b0-cef0-4320-a659-32beb2543d49]
+
+Started GET /favicon.ico for :: ::1 at Thu Aug 08 2024 16:02:32 GMT-0400 (hora de Venezuela)
+  Parameters in body: {}
+Completed: 404 message:  Time response: 14 ms Request ID: [f28e7329-590c-455c-af8f-1261be98bc53]

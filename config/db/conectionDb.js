@@ -10,7 +10,7 @@ const pool = new pg.Pool({
   // password: DB_PASSWORD,
   // allowExitOnIdle: true,
   connectionString: DATABASE_URL,
-  ssl: true
+/*   ssl: true */
 });
 
 pool.query('SELECT NOW()', (err, res) => {
