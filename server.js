@@ -16,7 +16,7 @@ app.use(logger());
 app.use(serverLog)
 
 app.use('/api/v1', userRoutes);
-app.use('/api/v1', songsRouter); // Al inicio
+app.use('/api/v1', songsRouter); // Al inicio prueba
 app.use('/api/v1', loginRoutes);
 
 app.listen(PORT, console.log(`🔥 Server on 🔥 http://localhost:${PORT}`));
